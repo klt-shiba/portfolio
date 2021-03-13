@@ -1,0 +1,24 @@
+.pd-top {
+   padding-top: 72px;
+}
+.pd-bottom {
+   padding-bottom: 72px;
+}
+.bg-colour {
+    background-color: #fff;
+}
+.bg-colour.grey {
+    background-color: #eee;
+}
+/* Loose spacing */
+.spacing-l > *  {
+    margin-top: 40px;
+}
+/* Regular spacing */
+.spacing-r {
+    margin-top: 24px;
+}
+/* Regular spacing */
+.spacing-t {
+    margin-top: 12px;
+}
