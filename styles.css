@@ -1,24 +1,64 @@
+/* Section specific */
+/* Typography Specific */
+#klt-portfolio h1, 
+#klt-portfolio h2, 
+#klt-portfolio h3, 
+#klt-portfolio h4, 
+#klt-portfolio h5, 
+#klt-portfolio h6 {
+    font-weight: 700;
+}
+.accordion-button.h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    color: #000;
+} 
+/* Spacing Specific*/
 .pd-top {
    padding-top: 72px;
 }
 .pd-bottom {
    padding-bottom: 72px;
 }
+/* Loose spacing */
+.spacing-l > div:not(:first-of-type){
+    margin-top: 40px;
+}
+/* Regular spacing */
+.spacing-r  > div:not(:first-of-type) {
+    margin-top: 24px;
+}
+/* Regular spacing */
+.spacing-t  > div:not(:first-of-type) {
+    margin-top: 12px;
+}
+
+/* Colour */
 .bg-colour {
     background-color: #fff;
 }
 .bg-colour.grey {
-    background-color: #eee;
+    background-color: #f8f8f8;
 }
-/* Loose spacing */
-.spacing-l > * {
-    margin-top: 40px;
+.accordion-button:hover {
+    background-color: #e7f1ff;;
 }
-/* Regular spacing */
-.spacing-r {
-    margin-top: 24px;
+.accordion-button.h3:not(.collapsed) {
+    color: #000;
+    background-color: #e7f1ff;
 }
-/* Regular spacing */
-.spacing-t {
-    margin-top: 12px;
+/* Image Cards */
+.img-container {
+    overflow: hidden;
+    max-height: 280px;
+}
+.img-container img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease-in-out; 
+}
+
+.img-container img {
+    transform: scale(1);
+    transition: all .5s ease-in-out;
 }
