@@ -1,4 +1,49 @@
+
 /* Section specific */
+
+
+/* Header */
+#nav-header a.nav-item-index {
+    padding: 12px 12px;
+    line-height: 24px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    position: relative;
+    color: #000;
+}
+#nav-header a.nav-item-index::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    background-color: #000;
+}
+#primary-navigation-links a.nav-item-index::before {
+    left: 0;
+}
+#secondary-navigation-links a.nav-item-index::before  {
+    right: 0;
+}
+#nav-header a:focus::before, 
+#nav-header a.nav-item-index:hover::before,
+#nav-header a.nav-item-index:focus::before   {
+width: 100%;
+opacity: 1;
+}
+#nav-header nav {
+    display: inline;
+}
+
+#nav-header nav.right {
+    float: right
+}
 /* Typography Specific */
 #klt-portfolio h1, 
 #klt-portfolio h2, 
@@ -29,7 +74,7 @@
 .spacing-r  > div:not(:first-of-type) {
     margin-top: 24px;
 }
-/* Regular spacing */
+/* Tight spacing */
 .spacing-t  > div:not(:first-of-type) {
     margin-top: 12px;
 }
@@ -57,8 +102,30 @@
     transform: scale(1.1);
     transition: all .5s ease-in-out; 
 }
-
 .img-container img {
     transform: scale(1);
     transition: all .5s ease-in-out;
+}
+.new-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    background-color:rgba(0,0,0,0);
+    transition: all .5s ease-in-out; 
+}
+.bl-overlay {
+    background-color:rgba(0,0,0,0.6);
+    transition: all .5s ease-in-out; 
+}
+.new-modal.show-modal {
+    display: block;
+    opacity: 1;
+    z-index: 2;
+}
+.bg-blur {
+    filter: blur(4px);
 }
