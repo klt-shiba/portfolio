@@ -130,3 +130,23 @@ opacity: 1;
 .bg-blur {
     filter: blur(4px);
 }
+#my-modal .card {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 400px;
+}
+#my-modal .card-body {
+    padding: 2rem;
+}
+#my-modal  .container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+}
+
+#klt-portfolio.no-scroll {
+    overflow-y: hidden;
+}
