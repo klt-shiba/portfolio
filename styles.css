@@ -1,7 +1,5 @@
 
 /* Section specific */
-
-
 /* Header */
 #nav-header a.nav-item-index {
     padding: 12px 12px;
@@ -23,7 +21,7 @@
     height: 5px;
     transition: all .5s ease-in-out;
     opacity: 0;
-    background-color: #000;
+    background-color: #ff0051;
 }
 #primary-navigation-links a.nav-item-index::before {
     left: 0;
@@ -40,9 +38,11 @@ opacity: 1;
 #nav-header nav {
     display: inline;
 }
-
 #nav-header nav.right {
     float: right
+}
+#nav-header .desktop-header {
+    display: block;
 }
 /* Typography Specific */
 #klt-portfolio h1, 
@@ -149,4 +149,28 @@ opacity: 1;
 
 #klt-portfolio.no-scroll {
     overflow-y: hidden;
+}
+span.highlight {
+    position: relative;
+}
+span.highlight::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: calc(100% + 10px);
+    height: 0px;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    background-color: #ff0051;
+    z-index: -1;
+    left: -10px;
+    right: -10px;
+}
+span.highlight::after {
+    bottom: -10px;
+}
+span.highlight:hover::after,
+span.highlight:focus::after   {
+    opacity: 1;
+    height: calc(100% + 10px);
 }

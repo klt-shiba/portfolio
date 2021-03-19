@@ -1,0 +1,11 @@
+/* @include media-breakpoint-up(sm) { 
+    #nav-header .desktop-header {
+        display: none;
+    }
+ } */
+
+ @media (max-width: 576px) { 
+    #nav-header .desktop-header {
+        display: none;
+    }
+  }

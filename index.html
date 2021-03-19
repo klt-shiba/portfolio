@@ -3,6 +3,7 @@
   <head>
     <title>UI/UX Designer </title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./mobile-styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <meta charset=“UTF-8”>
@@ -10,17 +11,16 @@
   </head>
   <body id="klt-portfolio">
     <header id="nav-header" class="container-fluid">
-      <div class="py-5">
+      <div class="py-5 desktop-header">
         <div class="row">
-          <div class="nav-left-container col-sm-5">
+          <div class="nav-left-container col-sm-4">
             <nav id="primary-navigation-links">
               <a class="nav-item-index" id="my-work">
                 <span>Work</span>
               </a>
             </nav>
           </div>
-          <div class="col-sm-2"></div>
-          <div class="nav-right-container col-sm-5">
+          <div class="nav-right-container col-sm-8">
             <nav id="secondary-navigation-links" class="right">
               <a class="nav-item-index" id="about-me">
                 <span>About me</span>
@@ -30,13 +30,13 @@
               </a>
             </nav>
           </div>
-        </div>
+        </div>  
       </div>
     </header>
     <section id="introduction" class="container-fluid pd-top pd-bottom">
         <div class="spacing-l container">
           <div class="header  pd-top pd-bottom">
-            <h1 class="display-4 text-center pd-top">Mr KLT is a UI/UX designer specializing in web app with a passion for spicy food!</h1>
+            <h1 class="display-4 text-center pd-top pd-bottom">Mr KLT is a UI/UX designer specializing in web apps with a <span class="highlight">passion for spicy food!</span></h1>
           </div>
           <!--<div class="body">
           </div>
@@ -46,7 +46,6 @@
               <button type="button" role="scroll" class="btn btn-outline-primary btn-lg">Get in touch!</button>
             </div>-->
           </div>
-        </div>
     </section>
     <section id="interests" class="container-fluid pd-top pd-bottom bg-colour grey">
         <div class="spacing-l container">
@@ -54,41 +53,43 @@
             <h2 class="display-5 center text-center">Things I like</h2>
           </div>
           <div class="row body">
-              <div class="col-sm-4">
-                  <div class="card" style="">
+              <div class="col-xs-12 col-xl-4 mb-3">
+                  <div class="card shadow-sm" style="">
                     <div class="img-container">
                       <img src="https://www.desktopbackground.org/download/1024x768/2013/01/21/518018_spiderman-1-wallpapers-wallpapers-cave_1366x768_h.jpg" class="card-img-top" alt="Spiderman climbing up the side of a building from the spiderman movie">
                       </div>
                       <div class="card-body">
-                      <h5 class="card-title">Rock Climbing</h5>
+                      <h5 class="card-title h3">Rock Climbing</h5>
                       <p class="card-text">Been going whenever I get the chance. Hard to find the time and a climbing buddy!</p>
-                      <a href="#" class="btn btn-outline-primary">Climb Mountain!</a>
+                      <a href="#" class="btn btn-outline-primary btn-lg">Climb Mountain!</a>
                       </div>
                   </div>
               </div>
-              <div class="col-sm-4">
-                  <div class="card" style="">
+              <div class="col-xs-12 col-xl-4 mb-3">
+                  <div class="card shadow-sm" style="">
                     <div class="img-container">
                       <img src="https://daintysichuanfood.com.au/wp-content/uploads/2018/04/Group-1.jpg" class="card-img-top" alt="A full bowl of sichuan noodles dripping in oil">
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Sichuan Noodles!</h5>
+                      <h5 class="card-title h3">Sichuan Noodles!</h5>
                       <p class="card-text">I love sichuan noodles and lucky for me there are some great places around Australia</p>
-                      <a href="https://daintysichuanfood.com.au/" class="btn btn-outline-primary">Eat Noodles</a>
+                      <a href="https://daintysichuanfood.com.au/" class="btn btn-outline-primary btn-lg"><span class="highlight">Eat Noodles</span></a>
                     </div>
                   </div>
               </div>
-              <div class="col-sm-4">
-                  <div class="card" style="">
-                      <div class="img-container">
-                        <img src="https://instagram.fmel12-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/126196898_808909756340015_4056918345126544370_n.jpg?tp=1&_nc_ht=instagram.fmel12-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=EHnRf9sz3D8AX_V7dNn&oh=233442a59eb01191f647ca9e25649db0&oe=60795ADF" class="card-img-top" alt="The instagram famous shiba inu called wabooe looking thoughtful">
+              <div class="col-xs-12 col-xl-4 mb-3">
+                <div class="row g-0 ">
+                  <div class="card shadow-sm" style="">
+                      <div class="img-container col-xs-4 col-lg-12">
+                        <img src="https://instagram.fmel12-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/126196898_808909756340015_4056918345126544370_n.jpg?tp=1&_nc_ht=instagram.fmel12-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=EHnRf9sz3D8AX_V7dNn&oh=233442a59eb01191f647ca9e25649db0&oe=60795ADF" class="card-img-top" style="margin-top:-25%"alt="The instagram famous shiba inu called wabooe looking thoughtful">
                       </div>
-                      <div class="card-body">
-                      <h5 class="card-title">Shiba Inus</h5>
+                      <div class="card-body col-xs-8 col-lg-12">
+                      <h5 class="card-title h3">Shiba Inus</h5>
                       <p class="card-text">Shibab inus are my favourite breed of dog! I hope to adopt one, someday!</p>
-                      <a href="https://www.instagram.com/wabooe/?hl=en" class="btn btn-outline-primary">Pet Doggo &#x1F415</a>
+                      <a href="https://www.instagram.com/wabooe/?hl=en" class="btn btn-outline-primary btn-lg">Pet Doggo &#x1F415</a>
                       </div>
                   </div>
+                </div>
               </div>
           </div>
         </div>
@@ -99,7 +100,7 @@
           <h2 class="display-5 center text-center">Where have I worked?</h2>
         </div>
         <div class="body row">
-          <div class="accordion" id="accordionExample">
+          <div class="accordion shadow-sm g-0" id="accordionExample">
             <div class="accordion-item">
               <h3 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed h3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Telstra - 2019 to present
@@ -107,11 +108,12 @@
               </h3>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Im currently a UI designer at Telstra. My day to day involves: 
+                  Im currently a UI designer at Telstra. I love designing features and improving the design system. My day to day involves: 
                   <br>
                   <ul class="mt-3">
                     <li>Working on our design system to make it effecient for our devs to implement new features</li>
                     <li>Designing smooth enjoyable experiences for the features we offer</li>
+                    <li>Testing features with the devs</li>
                     <li>Presenting work to stakeholders</li>
                   </ul>
                 </div>
@@ -125,7 +127,7 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     My previous role was as a UI/UX designer at MEGA privacy. A cloud storage provider that puts customer security and privacy as it's priority. My day to day involved:
-                </br>
+                <br>
                     <ul class="mt-3">
                     <li>Maintaining and improving the help and support pages of the website</li>
                     <li>Designing and enhancing the universal windows platform application</li>
