@@ -9,3 +9,11 @@
         display: none;
     }
   }
+  @media (max-width: 767.98px) { 
+    .pd-top {
+        padding-top: 48px;
+     }
+     .pd-bottom {
+        padding-bottom: 48px;
+     }
+}
