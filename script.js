@@ -11,21 +11,31 @@ window.onload=function() {
     function hideModal() {
         modal.classList.remove("show-modal");
     }
+    function toggleblur() {
+        let sectionContainer = document.getElementsByTagName('section'); 
+        for (i = 0; i < sectionContainer.length; i++) { 
 
-    function addBlur() {    
-        let sectionContainer = document.getElementsByTagName('section');
-        for (i = 0; i < sectionContainer.length; i++) {
-            sectionContainer[i].classList.add('bg-blur');
+            ((sectionContainer[i].classList.contains("bg-blur")) ? 
+            (sectionContainer[i].classList.remove('bg-blur'), navBar.classList.remove('bg-blur')) : 
+            (sectionContainer[i].classList.add('bg-blur'), navBar.classList.add('bg-blur')));
+            
         }
-        navBar.classList.add('bg-blur');
     }
-    function removeBlur() {    
-        let sectionContainer = document.getElementsByTagName('section');
-        for (i = 0; i < sectionContainer.length; i++) {
-            sectionContainer[i].classList.remove('bg-blur');
-        }
-        navBar.classList.remove('bg-blur');
-    }
+    // function addBlur() {    
+    //     let sectionContainer = document.getElementsByTagName('section');
+    //     for (i = 0; i < sectionContainer.length; i++) {
+    //         sectionContainer[i].classList.add('bg-blur');
+    //     }
+    //     navBar.classList.add('bg-blur');
+    // }
+    // function removeBlur() {    
+    //     let sectionContainer = document.getElementsByTagName('section');
+    //     for (i = 0; i < sectionContainer.length; i++) {
+    //         sectionContainer[i].classList.remove('bg-blur');
+    //     }
+    //     navBar.classList.remove('bg-blur');
+    // }
+    
     function lockScroll() {
         let body = document.getElementById('klt-portfolio');
         body.classList.add('no-scroll');
@@ -34,15 +44,17 @@ window.onload=function() {
         let body = document.getElementById('klt-portfolio');
         body.classList.remove('no-scroll');
     }
+    
+    
     function triggerModal() {
         showModal();
         lockScroll();
-        addBlur()
+        toggleblur();
     }
 
     function triggerModalOff() {
         unlockScroll();
-        removeBlur();
+        toggleblur();
         hideModal();
     }
 
